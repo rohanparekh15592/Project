@@ -7,4 +7,14 @@
     <string name="cancel">Cancel</string>
     <string name="not_a_user">Not a User Register here!!</string>
     <string name="skip">Skip</string>
+    <string name="registration_form">New User Register</string>
+    
+    <!-- strings for form -->
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_id">Email Id</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+
 </resources>
