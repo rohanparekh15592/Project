@@ -28,7 +28,7 @@ public class RegisterNewUser extends Activity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.registrationform_activity);
 
-        //all views asigned to their respective id
+        //all views assigned to their respective id
         first_name_register_editText = (EditText) findViewById(R.id.first_name_register_editText);
         last_name_register_editText = (EditText) findViewById(R.id.last_name_register_editText);
         email_id_register_editText = (EditText) findViewById(R.id.email_id_register_editText);

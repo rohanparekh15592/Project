@@ -8,7 +8,7 @@
     <string name="not_a_user">Not a User Register here!!</string>
     <string name="skip">Skip</string>
     <string name="registration_form">New User Register</string>
-    
+
     <!-- strings for form -->
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
@@ -16,5 +16,8 @@
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="register">Register</string>
+    <string name="Login">Login</string>
 
+    <string name="welcome_rest">What would you like?</string>
+    <string name="dish_cat">What would you like to see for?</string>
 </resources>
