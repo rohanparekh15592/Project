@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.brutality.ratehub">
 
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/applaunchericonoption"
@@ -25,15 +32,56 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+            <intent-filter>
+                <action android:name=".RestaurantType" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
         </activity>
+
         <activity
             android:name=".RegisterNewUser"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name=".DishCategory.java"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_dish_category.java"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/AppTheme">
+        <intent-filter>
+            <action android:name=".RestaurantType" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
+
+        <activity android:name=".RestaurantType"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name=".UserChanges" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".RestaurantList"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
+
+        <activity android:name=".UserChanges"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name=".ChangePassword" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+                <intent-filter>
+                    <action android:name=".DeleteAccount" />
+
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
+        </activity>
+
+
     </application>
 
 </manifest>

@@ -20,4 +20,13 @@
 
     <string name="welcome_rest">What would you like?</string>
     <string name="dish_cat">What would you like to see for?</string>
+    <string name="rest_list">List of Restaurants</string>
+    <string name="change_pass">Change Password</string>
+    <string name="delete_acc">Delete Account</string>
+
+    <string name="setting">Setting</string>
+    <string name="user_email">Enter email address</string>
+    <string name="user_password">Enter new password</string>
+    <string name="user_confirm_password">Re-enter Password</string>
+    <string name="user_delete">Delete Account</string>
 </resources>
