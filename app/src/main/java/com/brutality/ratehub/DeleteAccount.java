@@ -32,14 +32,14 @@ public class DeleteAccount extends Activity implements View.OnClickListener {
     String email;
     public static final String KEY_EMAIL = "email_id";
     ImageView back_button;
-    private static final String DELETE_URL = "http://192.168.0.39:8084/RateHub/UserInsertController";
+    private static final String DELETE_URL = "http://192.168.0.222:8084/RateHub/UserDeleteController";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.change_password);
+        setContentView(R.layout.delete_account);
 
         user_delete = (TextView) findViewById(R.id.user_delete);
         user_email = (TextView) findViewById(R.id.user_email);
@@ -67,6 +67,7 @@ public class DeleteAccount extends Activity implements View.OnClickListener {
 
     private void deleteAccount() {
         email = user_email.getText().toString().trim();
+        System.out.println(email);
 
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, DELETE_URL,

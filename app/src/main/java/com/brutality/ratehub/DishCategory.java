@@ -52,5 +52,9 @@ public class DishCategory extends Activity implements View.OnClickListener {
             Intent i= new Intent(DishCategory.this,DishList.class);
             startActivity(i);
         }
+        if(back_button==v){
+            Intent i= new Intent(DishCategory.this,RestaurantList.class);
+            startActivity(i);
+        }
     }
 }

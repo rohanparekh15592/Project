@@ -42,7 +42,7 @@ public class UserChanges extends Activity implements View.OnClickListener {
             startActivity(i);
         }
         if(v==user_delete_account){
-            Intent i= new Intent(this,ChangePassword.class);
+            Intent i= new Intent(this,DeleteAccount.class);
             startActivity(i);
         }
         if (v == back_button) {

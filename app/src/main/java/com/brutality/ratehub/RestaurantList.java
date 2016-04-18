@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -36,11 +37,18 @@ import java.util.List;
 /**
  * Created by rohan on 12-04-2016.
  */
-public class RestaurantList extends Activity {
+public class RestaurantList extends Activity implements View.OnClickListener {
+    ImageView back;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.restaurant_list);
+
+        back = (ImageView) findViewById(R.id.back_button);
+        back.setOnClickListener(this);
+
+
 
         ListView listview = (ListView) findViewById(R.id.list_view);
         String[] values = new String[]{"Android", "iPhone", "WindowsMobile",
@@ -52,11 +60,21 @@ public class RestaurantList extends Activity {
 
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
-                Toast.makeText(RestaurantList.this, "List View row Clicked at" + position, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(RestaurantList.this, "List View row Clicked at" + position, Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(RestaurantList.this,DishCategory.class);
+
+                startActivity(i);
+
             }
         });
     }
 
+    @Override
+    public void onClick(View v) {
+        Intent i = new Intent(RestaurantList.this,RestaurantType.class);
+        startActivity(i);
+
+    }
 }
 
 

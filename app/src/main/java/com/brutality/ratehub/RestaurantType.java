@@ -59,6 +59,21 @@ public class RestaurantType extends Activity implements View.OnClickListener {
             Intent i= new Intent(RestaurantType.this,RestaurantList.class);
             startActivity(i);
         }
+        if(v==landing_page_lunch_imageView){
+            Intent i= new Intent(RestaurantType.this,RestaurantList.class);
+            startActivity(i);
+        }
+        if(v==landing_page_brunch_imageView){
+            Intent i= new Intent(RestaurantType.this,RestaurantList.class);
+            startActivity(i);
+        }
 
+    }
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 }

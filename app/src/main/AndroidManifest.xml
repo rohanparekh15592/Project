@@ -69,7 +69,22 @@
             android:theme="@style/AppTheme">
 
         </activity>
+        <activity android:name=".DishList"
+            android:theme="@style/AppTheme">
 
+        </activity>
+        <activity android:name=".Description"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity android:name=".ChangePassword"
+            android:theme="@style/AppTheme">
+
+        </activity>
+        <activity android:name=".DeleteAccount"
+            android:theme="@style/AppTheme">
+
+        </activity>
 
         <activity android:name=".UserChanges"
             android:theme="@style/AppTheme">

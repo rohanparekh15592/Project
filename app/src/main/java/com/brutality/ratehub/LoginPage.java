@@ -35,7 +35,7 @@ public class LoginPage extends Activity implements View.OnClickListener {
     TextView welcomePage_register_textView;
     TextView welcomePage_skip_textView;
 
-    public static final String LOGIN_URL = "http://192.168.0.39:8084/RateHub/LogInServlet";
+    public static final String LOGIN_URL = "http://192.168.0.222:8084/RateHub/LogInServlet";
 
     public static final String KEY_USERNAME = "username";
     public static final String KEY_PASSWORD = "password";

@@ -33,7 +33,7 @@ public class ChangePassword extends Activity implements View.OnClickListener {
     TextView user_change_password;
     ImageView back_button;
     String email, password,confirmPassword;
-    private static final String PASSWORD_URL = "http://192.168.0.39:8084/RateHub/UserInsertController";
+    private static final String PASSWORD_URL = "http://192.168.0.222:8084/RateHub/ChangePasswordServlet";
     public static final String KEY_EMAIL = "email_id";
     public static final String KEY_PASSWORD = "password";
 
@@ -84,9 +84,11 @@ public class ChangePassword extends Activity implements View.OnClickListener {
                     public void onResponse(String response) {
 
                         String s = null;
+                        String e = null;
 
                         try {
                             JSONObject json = new JSONObject(response);
+                            e=json.getString("emailChk");
                             s = json.getString("Info");
                             System.out.println(s);
                         } catch (Throwable t) {
@@ -94,7 +96,7 @@ public class ChangePassword extends Activity implements View.OnClickListener {
                         }
 
 
-                        if (s.equals("Success")) {
+                        if (s.equals("Success") && e.equals("Success")  ) {
                             openProfile();
                         } else {
                             Toast.makeText(ChangePassword.this, response, Toast.LENGTH_LONG).show();
