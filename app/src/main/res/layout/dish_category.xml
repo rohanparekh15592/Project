@@ -50,17 +50,7 @@
                 android:gravity="center"/>
 
             <ImageView
-                android:id="@+id/landing_page_breakfast_imageView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:src="@drawable/starter"
-                />
-
-            <ImageView
-                android:id="@+id/landing_page_lunch_imageView"
+                android:id="@+id/landing_page_mainCourse_imageView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -69,7 +59,7 @@
                 android:src="@drawable/maincourse" />
 
             <ImageView
-                android:id="@+id/landing_page_brunch_imageView"
+                android:id="@+id/landing_page_drinks_imageView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -78,7 +68,7 @@
                 android:src="@drawable/drink" />
 
             <ImageView
-                android:id="@+id/landing_page_dinner_imageView"
+                android:id="@+id/landing_page_desserts_imageView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"

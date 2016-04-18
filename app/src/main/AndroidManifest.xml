@@ -65,6 +65,11 @@
 
         </activity>
 
+        <activity android:name=".DishCategory"
+            android:theme="@style/AppTheme">
+
+        </activity>
+
 
         <activity android:name=".UserChanges"
             android:theme="@style/AppTheme">
